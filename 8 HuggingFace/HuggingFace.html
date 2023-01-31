@@ -1,0 +1,801 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HuggingFace · Gitbook使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ivan Mao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../7 Transfer learning with neural language models/Transfer learning with neural language models.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://ivanmao.mo.cn/Learning%20Notes/index.html">
+            
+                    
+                    Ivan Mao Learning Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    NLP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../0 Intro/Intro.html">
+            
+                <a href="../0 Intro/Intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1 Language Modeling/1 Language Modeling.html">
+            
+                <a href="../1 Language Modeling/1 Language Modeling.html">
+            
+                    
+                    Language Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../2 Neural Language Models/Neural Language Models.html">
+            
+                <a href="../2 Neural Language Models/Neural Language Models.html">
+            
+                    
+                    Neural Language Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../3 Backpropagation/Backpropagation.html">
+            
+                <a href="../3 Backpropagation/Backpropagation.html">
+            
+                    
+                    Backpropagation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../3 Backpropagation/Backpropagation(补充">
+            
+                <span>
+            
+                    
+                    Backpropagation(补充)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../4 NLM implementation/NLM implementation.html">
+            
+                <a href="../4 NLM implementation/NLM implementation.html">
+            
+                    
+                    NLM implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../5 Attention mechanisms/Attention mechanisms.html">
+            
+                <a href="../5 Attention mechanisms/Attention mechanisms.html">
+            
+                    
+                    Attention mechanisms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../6 Transformer and sequence-to sequence learning/Transformer and sequence-to sequence learning.html">
+            
+                <a href="../6 Transformer and sequence-to sequence learning/Transformer and sequence-to sequence learning.html">
+            
+                    
+                    Transformer and sequence-to sequence learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../7 Transfer learning with neural language models/Transfer learning with neural language models.html">
+            
+                <a href="../7 Transfer learning with neural language models/Transfer learning with neural language models.html">
+            
+                    
+                    Transfer learning with neural language models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.9" data-path="HuggingFace.html">
+            
+                <a href="HuggingFace.html">
+            
+                    
+                    HuggingFace
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HuggingFace</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="huggingface">HuggingFace</h1>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<h3 id="&#x73AF;&#x5883;">&#x73AF;&#x5883;</h3>
+<ul>
+<li>python=3.6</li>
+<li>pytorch=1.10</li>
+</ul>
+<h3 id="&#x5B89;&#x88C5;transformers">&#x5B89;&#x88C5;transformers</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#pip&#x5B89;&#x88C5;</span>
+<span class="hljs-comment">#pip install transformers</span>
+
+<span class="hljs-comment">#conda&#x5B89;&#x88C5;</span>
+<span class="hljs-comment">#conda install -c huggingface transformers</span>
+</code></pre>
+<h3 id="&#x5B89;&#x88C5;datasets">&#x5B89;&#x88C5;datasets</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#pip&#x5B89;&#x88C5;</span>
+<span class="hljs-comment">#pip install datasets</span>
+
+<span class="hljs-comment">#conda&#x5B89;&#x88C5;</span>
+<span class="hljs-comment">#conda install -c huggingface -c conda-forge datasets</span>
+</code></pre>
+<h2 id="tokenizer"><strong>tokenizer</strong></h2>
+<h3 id="&#x52A0;&#x8F7D;&#x9884;&#x8BAD;&#x7EC3;&#x5B57;&#x5178;&#x548C;&#x5206;&#x8BCD;&#x65B9;&#x6CD5;">&#x52A0;&#x8F7D;&#x9884;&#x8BAD;&#x7EC3;&#x5B57;&#x5178;&#x548C;&#x5206;&#x8BCD;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> BertTokenizer
+
+tokenizer = BertTokenizer.from_pretrained(
+    pretrained_model_name_or_path=<span class="hljs-string">&apos;bert-base-chinese&apos;</span>,
+    cache_dir=<span class="hljs-keyword">None</span>,
+    force_download=<span class="hljs-keyword">False</span>,
+)
+
+sents = [
+    <span class="hljs-string">&apos;&#x9009;&#x62E9;&#x73E0;&#x6C5F;&#x82B1;&#x56ED;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x662F;&#x65B9;&#x4FBF;&#x3002;&apos;</span>,
+    <span class="hljs-string">&apos;&#x7B14;&#x8BB0;&#x672C;&#x7684;&#x952E;&#x76D8;&#x786E;&#x5B9E;&#x723D;&#x3002;&apos;</span>,
+    <span class="hljs-string">&apos;&#x623F;&#x95F4;&#x592A;&#x5C0F;&#x3002;&#x5176;&#x4ED6;&#x7684;&#x90FD;&#x4E00;&#x822C;&#x3002;&apos;</span>,
+    <span class="hljs-string">&apos;&#x4ECA;&#x5929;&#x624D;&#x77E5;&#x9053;&#x8FD9;&#x4E66;&#x8FD8;&#x6709;&#x7B2C;6&#x5377;,&#x771F;&#x6709;&#x70B9;&#x90C1;&#x95F7;.&apos;</span>,
+    <span class="hljs-string">&apos;&#x673A;&#x5668;&#x80CC;&#x9762;&#x4F3C;&#x4E4E;&#x88AB;&#x6495;&#x4E86;&#x5F20;&#x4EC0;&#x4E48;&#x6807;&#x7B7E;&#xFF0C;&#x6B8B;&#x80F6;&#x8FD8;&#x5728;&#x3002;&apos;</span>,
+]
+</code></pre>
+<h3 id="&#x7F16;&#x7801;">&#x7F16;&#x7801;</h3>
+<pre><code>out = tokenizer.encode(
+    text=sents[0],
+    text_pair=sents[1],
+
+    #&#x5F53;&#x53E5;&#x5B50;&#x957F;&#x5EA6;&#x5927;&#x4E8E;max_length&#x65F6;,&#x622A;&#x65AD;
+    truncation=True,
+
+    #&#x4E00;&#x5F8B;&#x8865;pad&#x5230;max_length&#x957F;&#x5EA6;
+    padding=&apos;max_length&apos;,
+    add_special_tokens=True,
+    max_length=30,
+    return_tensors=None,
+
+)
+
+print(out)
+
+tokenizer.decode(out)
+</code></pre><p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;</p>
+<blockquote>
+<pre><code>[101, 6848, 2885, 4403, 3736, 5709, 1736, 4638, 1333, 1728, 2218, 3221, 3175, 912, 511, 102, 5011, 6381, 3315, 4638, 7241, 4669, 4802, 2141, 4272, 511, 102, 0, 0, 0]
+</code></pre><pre><code>&apos;[CLS] &#x9009; &#x62E9; &#x73E0; &#x6C5F; &#x82B1; &#x56ED; &#x7684; &#x539F; &#x56E0; &#x5C31; &#x662F; &#x65B9; &#x4FBF; &#x3002; [SEP] &#x7B14; &#x8BB0; &#x672C; &#x7684; &#x952E; &#x76D8; &#x786E; &#x5B9E; &#x723D; &#x3002; [SEP] [PAD] [PAD] [PAD]&apos;
+</code></pre></blockquote>
+<h3 id="&#x589E;&#x5F3A;&#x7684;&#x7F16;&#x7801;&#x51FD;&#x6570;">&#x589E;&#x5F3A;&#x7684;&#x7F16;&#x7801;&#x51FD;&#x6570;</h3>
+<pre><code class="lang-py">out = tokenizer.encode_plus(
+    text=sents[<span class="hljs-number">0</span>],
+    text_pair=sents[<span class="hljs-number">1</span>],
+
+    <span class="hljs-comment">#&#x5F53;&#x53E5;&#x5B50;&#x957F;&#x5EA6;&#x5927;&#x4E8E;max_length&#x65F6;,&#x622A;&#x65AD;</span>
+    truncation=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x4E00;&#x5F8B;&#x8865;&#x96F6;&#x5230;max_length&#x957F;&#x5EA6;</span>
+    padding=<span class="hljs-string">&apos;max_length&apos;</span>,
+    max_length=<span class="hljs-number">30</span>,
+    add_special_tokens=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x53EF;&#x53D6;&#x503C;tf,pt,np,&#x9ED8;&#x8BA4;&#x4E3A;&#x8FD4;&#x56DE;list</span>
+    return_tensors=<span class="hljs-keyword">None</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;token_type_ids</span>
+    return_token_type_ids=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;attention_mask</span>
+    return_attention_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x6807;&#x8BC6;</span>
+    return_special_tokens_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;offset_mapping &#x6807;&#x8BC6;&#x6BCF;&#x4E2A;&#x8BCD;&#x7684;&#x8D77;&#x6B62;&#x4F4D;&#x7F6E;,&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x53EA;&#x80FD;BertTokenizerFast&#x4F7F;&#x7528;</span>
+    <span class="hljs-comment">#return_offsets_mapping=True,</span>
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;length &#x6807;&#x8BC6;&#x957F;&#x5EA6;</span>
+    return_length=<span class="hljs-keyword">True</span>,
+)
+
+<span class="hljs-comment">#input_ids &#x5C31;&#x662F;&#x7F16;&#x7801;&#x540E;&#x7684;&#x8BCD;</span>
+<span class="hljs-comment">#token_type_ids &#x7B2C;&#x4E00;&#x4E2A;&#x53E5;&#x5B50;&#x548C;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x7B2C;&#x4E8C;&#x4E2A;&#x53E5;&#x5B50;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;0</span>
+<span class="hljs-comment">#attention_mask pad&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#length &#x8FD4;&#x56DE;&#x53E5;&#x5B50;&#x957F;&#x5EA6;</span>
+<span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> out.items():
+    print(k, <span class="hljs-string">&apos;:&apos;</span>, v)
+
+tokenizer.decode(out[<span class="hljs-string">&apos;input_ids&apos;</span>])
+</code></pre>
+<p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;</p>
+<blockquote>
+<pre><code>input_ids : [101, 6848, 2885, 4403, 3736, 5709, 1736, 4638, 1333, 1728, 2218, 3221, 3175, 912, 511, 102, 5011, 6381, 3315, 4638, 7241, 4669, 4802, 2141, 4272, 511, 102, 0, 0, 0]
+token_type_ids : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+special_tokens_mask : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+attention_mask : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+length : 30
+</code></pre><pre><code>&apos;[CLS] &#x9009; &#x62E9; &#x73E0; &#x6C5F; &#x82B1; &#x56ED; &#x7684; &#x539F; &#x56E0; &#x5C31; &#x662F; &#x65B9; &#x4FBF; &#x3002; [SEP] &#x7B14; &#x8BB0; &#x672C; &#x7684; &#x952E; &#x76D8; &#x786E; &#x5B9E; &#x723D; &#x3002; [SEP] [PAD] [PAD] [PAD]&apos;
+</code></pre></blockquote>
+<h3 id="&#x6279;&#x91CF;&#x7F16;&#x7801;&#x53E5;&#x5B50;">&#x6279;&#x91CF;&#x7F16;&#x7801;&#x53E5;&#x5B50;</h3>
+<pre><code class="lang-py">out = tokenizer.batch_encode_plus(
+    batch_text_or_text_pairs=[sents[<span class="hljs-number">0</span>], sents[<span class="hljs-number">1</span>]],
+    add_special_tokens=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x5F53;&#x53E5;&#x5B50;&#x957F;&#x5EA6;&#x5927;&#x4E8E;max_length&#x65F6;,&#x622A;&#x65AD;</span>
+    truncation=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x4E00;&#x5F8B;&#x8865;&#x96F6;&#x5230;max_length&#x957F;&#x5EA6;</span>
+    padding=<span class="hljs-string">&apos;max_length&apos;</span>,
+    max_length=<span class="hljs-number">15</span>,
+
+    <span class="hljs-comment">#&#x53EF;&#x53D6;&#x503C;tf,pt,np,&#x9ED8;&#x8BA4;&#x4E3A;&#x8FD4;&#x56DE;list</span>
+    return_tensors=<span class="hljs-keyword">None</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;token_type_ids</span>
+    return_token_type_ids=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;attention_mask</span>
+    return_attention_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x6807;&#x8BC6;</span>
+    return_special_tokens_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;offset_mapping &#x6807;&#x8BC6;&#x6BCF;&#x4E2A;&#x8BCD;&#x7684;&#x8D77;&#x6B62;&#x4F4D;&#x7F6E;,&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x53EA;&#x80FD;BertTokenizerFast&#x4F7F;&#x7528;</span>
+    <span class="hljs-comment">#return_offsets_mapping=True,</span>
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;length &#x6807;&#x8BC6;&#x957F;&#x5EA6;</span>
+    return_length=<span class="hljs-keyword">True</span>,
+)
+
+<span class="hljs-comment">#input_ids &#x5C31;&#x662F;&#x7F16;&#x7801;&#x540E;&#x7684;&#x8BCD;</span>
+<span class="hljs-comment">#token_type_ids &#x7B2C;&#x4E00;&#x4E2A;&#x53E5;&#x5B50;&#x548C;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x7B2C;&#x4E8C;&#x4E2A;&#x53E5;&#x5B50;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;0</span>
+<span class="hljs-comment">#attention_mask pad&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#length &#x8FD4;&#x56DE;&#x53E5;&#x5B50;&#x957F;&#x5EA6;</span>
+<span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> out.items():
+    print(k, <span class="hljs-string">&apos;:&apos;</span>, v)
+
+tokenizer.decode(out[<span class="hljs-string">&apos;input_ids&apos;</span>][<span class="hljs-number">0</span>]), tokenizer.decode(out[<span class="hljs-string">&apos;input_ids&apos;</span>][<span class="hljs-number">1</span>])
+</code></pre>
+<p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;</p>
+<blockquote>
+<pre><code>input_ids : [[101, 6848, 2885, 4403, 3736, 5709, 1736, 4638, 1333, 1728, 2218, 3221, 3175, 912, 102], [101, 5011, 6381, 3315, 4638, 7241, 4669, 4802, 2141, 4272, 511, 102, 0, 0, 0]]
+token_type_ids : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+special_tokens_mask : [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]]
+length : [15, 12]
+attention_mask : [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]]
+</code></pre><pre><code>(&apos;[CLS] &#x9009; &#x62E9; &#x73E0; &#x6C5F; &#x82B1; &#x56ED; &#x7684; &#x539F; &#x56E0; &#x5C31; &#x662F; &#x65B9; &#x4FBF; [SEP]&apos;,
+ &apos;[CLS] &#x7B14; &#x8BB0; &#x672C; &#x7684; &#x952E; &#x76D8; &#x786E; &#x5B9E; &#x723D; &#x3002; [SEP] [PAD] [PAD] [PAD]&apos;)
+</code></pre></blockquote>
+<h3 id="&#x6279;&#x91CF;&#x7F16;&#x7801;&#x6210;&#x5BF9;&#x7684;&#x53E5;&#x5B50;">&#x6279;&#x91CF;&#x7F16;&#x7801;&#x6210;&#x5BF9;&#x7684;&#x53E5;&#x5B50;</h3>
+<pre><code class="lang-py">out = tokenizer.batch_encode_plus(
+    batch_text_or_text_pairs=[(sents[<span class="hljs-number">0</span>], sents[<span class="hljs-number">1</span>]), (sents[<span class="hljs-number">2</span>], sents[<span class="hljs-number">3</span>])],
+    add_special_tokens=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x5F53;&#x53E5;&#x5B50;&#x957F;&#x5EA6;&#x5927;&#x4E8E;max_length&#x65F6;,&#x622A;&#x65AD;</span>
+    truncation=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x4E00;&#x5F8B;&#x8865;&#x96F6;&#x5230;max_length&#x957F;&#x5EA6;</span>
+    padding=<span class="hljs-string">&apos;max_length&apos;</span>,
+    max_length=<span class="hljs-number">30</span>,
+
+    <span class="hljs-comment">#&#x53EF;&#x53D6;&#x503C;tf,pt,np,&#x9ED8;&#x8BA4;&#x4E3A;&#x8FD4;&#x56DE;list</span>
+    return_tensors=<span class="hljs-keyword">None</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;token_type_ids</span>
+    return_token_type_ids=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;attention_mask</span>
+    return_attention_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x6807;&#x8BC6;</span>
+    return_special_tokens_mask=<span class="hljs-keyword">True</span>,
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;offset_mapping &#x6807;&#x8BC6;&#x6BCF;&#x4E2A;&#x8BCD;&#x7684;&#x8D77;&#x6B62;&#x4F4D;&#x7F6E;,&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x53EA;&#x80FD;BertTokenizerFast&#x4F7F;&#x7528;</span>
+    <span class="hljs-comment">#return_offsets_mapping=True,</span>
+
+    <span class="hljs-comment">#&#x8FD4;&#x56DE;length &#x6807;&#x8BC6;&#x957F;&#x5EA6;</span>
+    return_length=<span class="hljs-keyword">True</span>,
+)
+
+<span class="hljs-comment">#input_ids &#x5C31;&#x662F;&#x7F16;&#x7801;&#x540E;&#x7684;&#x8BCD;</span>
+<span class="hljs-comment">#token_type_ids &#x7B2C;&#x4E00;&#x4E2A;&#x53E5;&#x5B50;&#x548C;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x7B2C;&#x4E8C;&#x4E2A;&#x53E5;&#x5B50;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#special_tokens_mask &#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x662F;1,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;0</span>
+<span class="hljs-comment">#attention_mask pad&#x7684;&#x4F4D;&#x7F6E;&#x662F;0,&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x662F;1</span>
+<span class="hljs-comment">#length &#x8FD4;&#x56DE;&#x53E5;&#x5B50;&#x957F;&#x5EA6;</span>
+<span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> out.items():
+    print(k, <span class="hljs-string">&apos;:&apos;</span>, v)
+
+tokenizer.decode(out[<span class="hljs-string">&apos;input_ids&apos;</span>][<span class="hljs-number">0</span>])
+</code></pre>
+<p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;</p>
+<blockquote>
+<pre><code>input_ids : [[101, 6848, 2885, 4403, 3736, 5709, 1736, 4638, 1333, 1728, 2218, 3221, 3175, 912, 511, 102, 5011, 6381, 3315, 4638, 7241, 4669, 4802, 2141, 4272, 511, 102, 0, 0, 0], [101, 2791, 7313, 1922, 2207, 511, 1071, 800, 4638, 6963, 671, 5663, 511, 102, 791, 1921, 2798, 4761, 6887, 6821, 741, 6820, 3300, 5018, 127, 1318, 117, 4696, 3300, 102]]
+token_type_ids : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+special_tokens_mask : [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]]
+length : [27, 30]
+attention_mask : [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+</code></pre><pre><code>&apos;[CLS] &#x9009; &#x62E9; &#x73E0; &#x6C5F; &#x82B1; &#x56ED; &#x7684; &#x539F; &#x56E0; &#x5C31; &#x662F; &#x65B9; &#x4FBF; &#x3002; [SEP] &#x7B14; &#x8BB0; &#x672C; &#x7684; &#x952E; &#x76D8; &#x786E; &#x5B9E; &#x723D; &#x3002; [SEP] [PAD] [PAD] [PAD]&apos;
+</code></pre></blockquote>
+<h3 id="&#x83B7;&#x53D6;&#x5B57;&#x5178;">&#x83B7;&#x53D6;&#x5B57;&#x5178;</h3>
+<pre><code class="lang-py">zidian = tokenizer.get_vocab()
+
+type(zidian), len(zidian), <span class="hljs-string">&apos;&#x6708;&#x5149;&apos;</span> <span class="hljs-keyword">in</span> zidian,
+</code></pre>
+<blockquote>
+<pre><code>(dict, 21128, False)
+</code></pre></blockquote>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x6DFB;&#x52A0;&#x65B0;&#x8BCD;</span>
+tokenizer.add_tokens(new_tokens=[<span class="hljs-string">&apos;&#x6708;&#x5149;&apos;</span>, <span class="hljs-string">&apos;&#x5E0C;&#x671B;&apos;</span>])
+
+<span class="hljs-comment">#&#x6DFB;&#x52A0;&#x65B0;&#x7B26;&#x53F7;</span>
+tokenizer.add_special_tokens({<span class="hljs-string">&apos;eos_token&apos;</span>: <span class="hljs-string">&apos;[EOS]&apos;</span>})
+
+zidian = tokenizer.get_vocab()
+
+type(zidian), len(zidian), zidian[<span class="hljs-string">&apos;&#x6708;&#x5149;&apos;</span>], zidian[<span class="hljs-string">&apos;[EOS]&apos;</span>]
+</code></pre>
+<p>&#x6267;&#x884C;&#x540E;</p>
+<blockquote>
+<pre><code>(dict, 21131, 21128, 21130)
+</code></pre></blockquote>
+<h2 id="datasets"><strong>Datasets</strong></h2>
+<h3 id="&#x52A0;&#x8F7D;&#x6570;&#x636E;">&#x52A0;&#x8F7D;&#x6570;&#x636E;</h3>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> datasets <span class="hljs-keyword">import</span> load_dataset
+
+<span class="hljs-comment">#&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x4E0D;&#x5141;&#x8BB8;&#x4F60;&#x6267;&#x884C;&#x8FD9;&#x6BB5;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x3010;&#x4ECE;&#x78C1;&#x76D8;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3011;&#x5373;&#x53EF;&#xFF0C;&#x6211;&#x5DF2;&#x7ECF;&#x7ED9;&#x4F60;&#x51C6;&#x5907;&#x4E86;&#x672C;&#x5730;&#x5316;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;</span>
+dataset = load_dataset(path=<span class="hljs-string">&apos;seamew/ChnSentiCorp&apos;</span>)
+
+<span class="hljs-comment">#&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x96C6;&#x5230;&#x78C1;&#x76D8;</span>
+<span class="hljs-comment">#&#x6CE8;&#x610F;&#xFF1A;&#x8FD0;&#x884C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x8981;&#x786E;&#x4FDD;&#x3010;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3011;&#x8FD0;&#x884C;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x3010;&#x4ECE;&#x78C1;&#x76D8;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3011;&#x5373;&#x53EF;</span>
+dataset.save_to_disk(dataset_dict_path=<span class="hljs-string">&apos;./data/ChnSentiCorp&apos;</span>)
+
+<span class="hljs-comment">#&#x4ECE;&#x78C1;&#x76D8;&#x52A0;&#x8F7D;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">from</span> datasets <span class="hljs-keyword">import</span> load_from_disk
+dataset = load_from_disk(<span class="hljs-string">&apos;./data/ChnSentiCorp&apos;</span>)
+
+dataset
+</code></pre>
+<h3 id="&#x6570;&#x636E;&#x96C6;&#x51FD;&#x6570;">&#x6570;&#x636E;&#x96C6;&#x51FD;&#x6570;</h3>
+<h4 id="sort">sort</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x672A;&#x6392;&#x5E8F;&#x7684;label&#x662F;&#x4E71;&#x5E8F;&#x7684;</span>
+print(dataset[<span class="hljs-string">&apos;label&apos;</span>][:<span class="hljs-number">10</span>])
+
+<span class="hljs-comment">#&#x6392;&#x5E8F;&#x4E4B;&#x540E;label&#x6709;&#x5E8F;&#x4E86;</span>
+sorted_dataset = dataset.sort(<span class="hljs-string">&apos;label&apos;</span>)
+print(sorted_dataset[<span class="hljs-string">&apos;label&apos;</span>][:<span class="hljs-number">10</span>])
+print(sorted_dataset[<span class="hljs-string">&apos;label&apos;</span>][<span class="hljs-number">-10</span>:])
+</code></pre>
+<h4 id="shuffle">shuffle</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x6253;&#x4E71;&#x987A;&#x5E8F;</span>
+shuffled_dataset = sorted_dataset.shuffle(seed=<span class="hljs-number">42</span>)
+
+shuffled_dataset[<span class="hljs-string">&apos;label&apos;</span>][:<span class="hljs-number">10</span>]
+</code></pre>
+<h4 id="select">select</h4>
+<pre><code class="lang-py">dataset.select([<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>])
+</code></pre>
+<h4 id="filter">filter</h4>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span><span class="hljs-params">(data)</span>:</span>
+    <span class="hljs-keyword">return</span> data[<span class="hljs-string">&apos;text&apos;</span>].startswith(<span class="hljs-string">&apos;&#x9009;&#x62E9;&apos;</span>)
+
+
+start_with_ar = dataset.filter(f)
+
+len(start_with_ar), start_with_ar[<span class="hljs-string">&apos;text&apos;</span>]
+</code></pre>
+<h4 id="traintestsplit">train_test_split</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#train_test_split, &#x5207;&#x5206;&#x8BAD;&#x7EC3;&#x96C6;&#x548C;&#x6D4B;&#x8BD5;&#x96C6;</span>
+dataset.train_test_split(test_size=<span class="hljs-number">0.1</span>)
+</code></pre>
+<h4 id="shard">shard</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x628A;&#x6570;&#x636E;&#x5207;&#x5206;&#x5230;4&#x4E2A;&#x6876;&#x4E2D;,&#x5747;&#x5300;&#x5206;&#x914D;</span>
+dataset.shard(num_shards=<span class="hljs-number">4</span>, index=<span class="hljs-number">0</span>)
+</code></pre>
+<h4 id="renamecolumn">rename_column</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#rename_column</span>
+dataset.rename_column(<span class="hljs-string">&apos;text&apos;</span>, <span class="hljs-string">&apos;textA&apos;</span>)
+</code></pre>
+<h4 id="removecolumns">remove_columns</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#remove_columns</span>
+dataset.remove_columns([<span class="hljs-string">&apos;text&apos;</span>])
+</code></pre>
+<h4 id="map">map</h4>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span><span class="hljs-params">(data)</span>:</span>
+    data[<span class="hljs-string">&apos;text&apos;</span>] = <span class="hljs-string">&apos;My sentence: &apos;</span> + data[<span class="hljs-string">&apos;text&apos;</span>]
+    <span class="hljs-keyword">return</span> data
+
+
+datatset_map = dataset.map(f)
+
+datatset_map[<span class="hljs-string">&apos;text&apos;</span>][:<span class="hljs-number">5</span>]
+</code></pre>
+<h4 id="setformat">set_format</h4>
+<pre><code class="lang-py">dataset.set_format(type=<span class="hljs-string">&apos;torch&apos;</span>, columns=[<span class="hljs-string">&apos;label&apos;</span>])
+dataset[<span class="hljs-number">0</span>]
+</code></pre>
+<h4 id="&#x5BFC;&#x51FA;&#x52A0;&#x8F7D;">&#x5BFC;&#x51FA;/&#x52A0;&#x8F7D;</h4>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x5BFC;&#x51FA;&#x4E3A;csv&#x683C;&#x5F0F;</span>
+dataset = load_dataset(path=<span class="hljs-string">&apos;seamew/ChnSentiCorp&apos;</span>, split=<span class="hljs-string">&apos;train&apos;</span>)
+dataset.to_csv(path_or_buf=<span class="hljs-string">&apos;./data/ChnSentiCorp.csv&apos;</span>)
+
+<span class="hljs-comment">#&#x52A0;&#x8F7D;csv&#x683C;&#x5F0F;&#x6570;&#x636E;</span>
+csv_dataset = load_dataset(path=<span class="hljs-string">&apos;csv&apos;</span>,
+                           data_files=<span class="hljs-string">&apos;./data/ChnSentiCorp.csv&apos;</span>,
+                           split=<span class="hljs-string">&apos;train&apos;</span>)
+csv_dataset[<span class="hljs-number">20</span>]
+</code></pre>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x5BFC;&#x51FA;&#x4E3A;json&#x683C;&#x5F0F;</span>
+dataset = load_dataset(path=<span class="hljs-string">&apos;seamew/ChnSentiCorp&apos;</span>, split=<span class="hljs-string">&apos;train&apos;</span>)
+dataset.to_json(path_or_buf=<span class="hljs-string">&apos;./data/ChnSentiCorp.json&apos;</span>)
+
+<span class="hljs-comment">#&#x52A0;&#x8F7D;json&#x683C;&#x5F0F;&#x6570;&#x636E;</span>
+json_dataset = load_dataset(path=<span class="hljs-string">&apos;json&apos;</span>,
+                            data_files=<span class="hljs-string">&apos;./data/ChnSentiCorp.json&apos;</span>,
+                            split=<span class="hljs-string">&apos;train&apos;</span>)
+json_dataset[<span class="hljs-number">20</span>]
+</code></pre>
+<h2 id="metric"><strong>Metric</strong></h2>
+<h3 id="&#x5217;&#x51FA;&#x8BC4;&#x4EF7;&#x6307;&#x6807;">&#x5217;&#x51FA;&#x8BC4;&#x4EF7;&#x6307;&#x6807;</h3>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> datasets <span class="hljs-keyword">import</span> list_metrics
+
+<span class="hljs-comment">#&#x5217;&#x51FA;&#x8BC4;&#x4EF7;&#x6307;&#x6807;</span>
+metrics_list = list_metrics()
+
+len(metrics_list), metrics_list
+</code></pre>
+<p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;</p>
+<blockquote>
+<pre><code>(34,
+ [&apos;accuracy&apos;,
+  &apos;bertscore&apos;,
+  &apos;bleu&apos;,
+  &apos;bleurt&apos;,
+  &apos;cer&apos;,
+  &apos;chrf&apos;,
+  &apos;code_eval&apos;,
+  &apos;comet&apos;,
+  &apos;competition_math&apos;,
+  &apos;coval&apos;,
+  &apos;cuad&apos;,
+  &apos;f1&apos;,
+  &apos;gleu&apos;,
+  &apos;glue&apos;,
+  &apos;google_bleu&apos;,
+  &apos;indic_glue&apos;,
+  &apos;matthews_correlation&apos;,
+  &apos;mauve&apos;,
+  &apos;meteor&apos;,
+  &apos;pearsonr&apos;,
+  &apos;precision&apos;,
+  &apos;recall&apos;,
+  &apos;rouge&apos;,
+  &apos;sacrebleu&apos;,
+  &apos;sari&apos;,
+  &apos;seqeval&apos;,
+  &apos;spearmanr&apos;,
+  &apos;squad&apos;,
+  &apos;squad_v2&apos;,
+  &apos;super_glue&apos;,
+  &apos;ter&apos;,
+  &apos;wer&apos;,
+  &apos;wiki_split&apos;,
+  &apos;xnli&apos;])
+</code></pre></blockquote>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> datasets <span class="hljs-keyword">import</span> load_metric
+
+<span class="hljs-comment">#&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x8BC4;&#x4EF7;&#x6307;&#x6807;</span>
+metric = load_metric(<span class="hljs-string">&apos;glue&apos;</span>, <span class="hljs-string">&apos;mrpc&apos;</span>)
+
+print(metric.inputs_description)
+
+<span class="hljs-comment">#&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x8BC4;&#x4EF7;&#x6307;&#x6807;</span>
+predictions = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]
+references = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>]
+
+final_score = metric.compute(predictions=predictions, references=references)
+
+final_score
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../7 Transfer learning with neural language models/Transfer learning with neural language models.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Transfer learning with neural language models">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HuggingFace","level":"1.2.9","depth":2,"previous":{"title":"Transfer learning with neural language models","level":"1.2.8","depth":2,"path":"7 Transfer learning with neural language models/Transfer learning with neural language models.md","ref":"7 Transfer learning with neural language models/Transfer learning with neural language models.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","katex","chapter-fold","code","splitter","-lunr","-search","search-pro","insert-logo"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"img/logo.png"}},"theme":"default","author":"Ivan Mao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook使用教程","language":"zh-hans","gitbook":"*","description":"学习Gitbook时总结的笔记"},"file":{"path":"8 HuggingFace/HuggingFace.md","mtime":"2023-01-11T00:11:09.095Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-31T04:26:06.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
